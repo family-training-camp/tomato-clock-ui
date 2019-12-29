@@ -3,8 +3,12 @@
     <el-row class="top-row">
       <el-col :span="8">
         <span>
-          <i class="el-icon-user" /> </span>&nbsp; <span class="loginBtn">{{ $t('m.login') }}</span>&nbsp;|
-        <span class="registerBtn">{{ $t('m.register') }}</span>
+          <i class="el-icon-user" /> </span>&nbsp; <el-link class="loginBtn" :underline="false" @click="login">
+            {{ $t('m.login') }}
+          </el-link>&nbsp;
+        <el-link class="registerBtn" :underline="false" @click="register">
+          {{ $t('m.register') }}
+        </el-link>
       </el-col>
       <el-col :span="6" :offset="10">
         <span @click="addTaskCard">
@@ -31,6 +35,12 @@ export default {
     }
   },
   methods: {
+    login() {
+      this.$router.push('/login')
+    },
+    register() {
+      this.$router.push('/register')
+    },
     switchLanguage() {
       const m = this.$i18n.locale === 'zh' ? 'en' : 'zh'
       this.$i18n.locale = m

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from './views/Login'
+import Register from './views/Register'
 import HomePage from './views/HomePage'
 import StartCount from './views/StartCount'
 import DataCharts from './views/DataCharts'
@@ -11,6 +12,12 @@ const routes = [{
   path: '/login',
   name: 'Login',
   component: Login,
+  meta: { notRequireAuth: true }
+},
+{
+  path: '/register',
+  name: 'Register',
+  component: Register,
   meta: { notRequireAuth: true }
 },
 {

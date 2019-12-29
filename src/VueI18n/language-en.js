@@ -1,5 +1,6 @@
 export const m = {
   email: 'email-address',
+  username: 'username',
   password: 'password',
   start: 'start',
   end: 'end',

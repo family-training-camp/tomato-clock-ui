@@ -1,5 +1,5 @@
 const state = {
-  account: {
+  accountForm: {
     username: '',
     isLogin: false
   }
@@ -9,8 +9,8 @@ const actions = {}
 
 const mutations = {
   loginSuccess(state, account) {
-    state.account.username = account.username
-    state.account.isLogin = true
+    state.accountForm.username = account.username
+    state.accountForm.isLogin = true
   },
   loginOut(state) {
     state.account = {

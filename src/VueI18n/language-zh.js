@@ -1,5 +1,6 @@
 export const m = {
   email: '邮箱地址',
+  username: '用户名',
   password: '密码',
   start: '开始',
   end: '结束',

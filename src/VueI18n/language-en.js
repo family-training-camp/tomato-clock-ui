@@ -8,7 +8,7 @@ export const m = {
   second: 'second',
   switchLanguage: 'switchLanguage',
   login: 'login',
-  register: 'register',
+  register: 'Register.vue',
   chinese: 'Chinese',
   english: 'English'
 }
